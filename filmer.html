@@ -1,0 +1,280 @@
+<!doctype html>
+<!-- Kommentarer --> 
+
+<html lang='sv'>
+	<head> 
+       <meta charset='utf-8'>
+        <title>Webbutveckling</title> 
+        <link rel='stylesheet' href='anime.css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+			body
+			{
+				background-color:#303030;
+			}
+			a, a:visited
+			{
+				color: white;
+				text-decoration: none;
+			}
+			a:hover
+			{
+			  background-color: black;
+			}
+			div.g
+			{
+				height: 100px; 
+				width: 1500px;
+			}
+			h1
+			{
+				font-family: 'Fuzzy Bubbles', cursive;
+				position: relative;
+				top: 10px;
+				left: 10px;
+				color:white;
+			}
+			input#text
+			{
+				position: absolute;
+				width: 300px;
+				left: 1190px;
+				top: 36px;
+				//margin-bottom: 0px;
+				border-radius: 30px;
+			}
+			
+			a#lan
+			{
+				position: absolute;
+				//background-color: black;
+				left: 1110px;
+				top: 40px;
+				
+			}
+			a#su
+			{
+				position: absolute;
+				//background-color: black;
+				left: 1035px;
+				top: 40px;
+				
+			}
+			a#sta
+			{
+				position: absolute;
+				//background-color: black;
+				left: 960px;
+				top: 40px;
+				
+			}
+			.slideshow-container img
+			{
+				border: 8px solid white;
+				width: 1490px;
+				height: 600px;
+			}
+			.mySlides 
+			{
+				display: none;
+				width: 100px;
+				height: 400px;	
+				
+			}
+			.slideshow-container 
+			{
+				width: 1000px;
+				height: 300px;
+				
+			}
+			.dot 
+			{
+				text-align:center
+				height: 15px;
+				width: 15px;
+				margin: 3px;
+				background-color: black;
+				border-radius: 50%;
+				display: inline-block;
+			}
+			.active 
+			{
+				background-color: #717171;
+			}
+			
+			
+			
+			
+			section 
+			{
+				//background-color:yellow;
+				overflow: hidden;
+				width:100%;
+				margin: 0 auto;
+				margin-top:150px;
+				white-space:nowrap; 
+				overflow: scroll;
+			}
+			.pic-container
+			{
+				//background-color:pink;
+				width: 1490px;
+			}
+			img.films
+			{
+				
+				width:303px;
+				height:303px;
+				border: 8px solid white;
+			}
+			div#row
+			{
+				//background-color:yellow;
+				position:absolute;
+				top:700px;
+			}
+			
+			
+			div#social
+			{
+				background-color: black;
+				width: 100%;
+				height: 100%;
+				margin-top:1700px;
+				text-align:center;
+			}
+			.fa
+			{
+				background-color: black;
+				padding: 20px;
+				font-size: 20px;
+				width: 15px;
+				text-align: center;
+				text-decoration: none;
+				margin: 30px 10px;			
+			}
+			.fa-instagram 
+			{
+				background: #125688;
+				color: white;
+			}
+			.fa-pinterest 
+			{
+			  background: #cb2027;
+			  color: white; 
+			}
+			.fa-facebook 
+			{
+			  background: #3B5998;
+			  color: white;
+			  
+			}
+			.fa-twitter
+			{
+			  background: #55ACEE;
+			  color: white;
+			}
+			div#baka
+			{
+				color:white;
+				text-align:center;
+			}
+			
+        </style>
+    </head>
+	<body>
+		<div class=g id=si>
+			<h1>Anime-filmer</h1>
+			<a class=mai id=lan href=index.html>Tillbacka</a>
+			<a class=mai id=su href=om-sidan.html>Om sidan</a>
+			<a class=mai id=sta href=index.html>Hemsidan</a>
+			<input id=text type=text>
+		</div>
+		<div class="slideshow-container" id=slideshow>
+			<div class="mySlides fade">
+				<img src=bilder/lara.jpg >
+			</div>
+			<div class="mySlides fade">
+				<img src=bilder/filmer.jpg >  
+			</div>
+			
+			<div class="mySlides fade">
+				<img src=bilder/sa.jpg >  
+			</div>
+		</div>
+			<div id=doti>
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			</div>
+			<script>
+			
+				let slideIndex = 0;
+				showSlides();
+
+				function showSlides() 
+				{
+					  let i;
+					  let slides = document.getElementsByClassName("mySlides");
+					  let dots = document.getElementsByClassName("dot");
+					for (i = 0; i < slides.length; i++) 
+					{
+						slides[i].style.display = "none";  
+					}
+					  slideIndex++;
+					  if (slideIndex > slides.length) {slideIndex = 1}    
+					for (i = 0; i < dots.length; i++) 
+					{
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					  slides[slideIndex-1].style.display = "block";  
+					  dots[slideIndex-1].className += " active";
+					  setTimeout(showSlides, 3000); 
+				}
+			</script>
+		<div id=row>		
+			<section>
+				  <div class="pic-container">
+					<div class="pic-row">
+						<a href=start.html><img class=films src="bild/ett.jpg"></a>
+						<img class=films src="bild/två.avif">
+						<img class=films src="bild/tre.jpg">
+						<img class=films src="bild/for.jpg">
+						<img class=films src="bild/fem.jpg">
+						<img class=films src="bild/sex.jpg">
+					</div>
+				  </div>
+			</section>
+			
+			<section>
+				  <div class="pic-container">
+					<div class="pic-row">
+					  <img class=films src="bilder/21.jpg">
+					  <img class=films src="bilder/21.jpg">
+					  <img class=films src="bilder/16.jpg">
+					  <img class=films src="bilder/14.jpg">
+					  <img class=films src="bilder/15.jpg">
+					  <img class=films src="bilder/6.jpg">
+					</div>
+				  </div>
+			</section>
+			
+			
+
+			
+		</div>
+		<div id=social>
+					<a href="https://www.facebook.com/aya.nasra.355/" class="fa fa-facebook"></a>
+					<a href="https://www.instagram.com/nasra.aya/" class="fa fa-instagram"></a>
+					<a href="https://twitter.com/home" class="fa fa-twitter"></a>
+					<a href="https://www.pinterest.se/ayanas0304/" class="fa fa-pinterest"></a>
+				
+					<div id=baka>
+						Ayanas0304@gmail.com
+							&copy;AYA
+					</div>
+		</div>
+		
+    </body> 
+</html>

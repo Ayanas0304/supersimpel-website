@@ -1,0 +1,142 @@
+<!doctype html>
+<!-- Kommentarer --> 
+
+<html lang='sv'> 
+
+	<head>
+		<meta charset='utf-8'>
+		<title>Webbutveckling</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel='stylesheet' href='index.css'>
+	</head>
+	<body>
+	
+	
+		<div class=g>
+			<img id=ettan src=bilder/animeo.jpg>
+			<div id=links>
+				<a class=mai id=lan href=filmer.html>filmer</a>
+				<a class=mai id=lan href=om-sidan.html>Om sidan</a>
+				<a class=mai id=su href=bio/wallpaper.html>Anime memes </a>
+				<a class=mai id=sta href=start.html>Hemsidan</a>
+				<input id=text type=text placeholder=sök...>
+			</div>
+			
+		</div>
+
+		
+		
+		
+		<div class="slideshow-container" id=slideshow>
+			
+			<div class="mySlides fade">
+				<img src=bilder/22.jpg style= "width: 1490px; height:400px;">
+			</div>
+			<div class="mySlides fade">
+				<img src=bilder/16.jpg style="width: 1490px; height:400px;">  
+			</div>
+			
+			<div class="mySlides fade">
+				<img src=bilder/10.jpg style= "width: 1490px; height:400px;">  
+			</div>
+			
+			<div class="mySlides fade">
+				<img src=bilder/13.jpg style= "width: 1490px; height:400px;">  
+			</div>
+				
+			<div class="mySlides fade">
+				<img src=bilder/20.jpg style= "width: 1490px; height:400px;">
+			</div>
+
+			<div class="mySlides fade">
+				<img src=bilder/18.jpg style="width: 1490px; height:400px;">
+			</div>
+			
+			<div class="mySlides fade">
+				<img src=bilder/9.jpg style= "width: 1490px; height:400px;">
+			</div>
+		</div>
+		<div id=noslideshow>
+		
+			<img id=ita src=bilder/ita.jpg>
+		</div>
+			
+		
+
+			<div style=text-align:center; id=doti>
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			</div>
+
+			<script>
+				let slideIndex = 0;
+				showSlides();
+
+				function showSlides() 
+				{
+					  let i;
+					  let slides = document.getElementsByClassName("mySlides");
+					  let dots = document.getElementsByClassName("dot");
+					for (i = 0; i < slides.length; i++) 
+					{
+						slides[i].style.display = "none";  
+					}
+					  slideIndex++;
+					  if (slideIndex > slides.length) {slideIndex = 1}    
+					for (i = 0; i < dots.length; i++) 
+					{
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					  slides[slideIndex-1].style.display = "block";  
+					  dots[slideIndex-1].className += " active";
+					  setTimeout(showSlides, 3000); 
+				}
+			</script>
+		<div id=bio>
+			<div class=imgs><a href=anime/aot.html><img class=bio src=bilder/aot4.jpg alt="HTML tutorial"><br><p>ATTACK ON TITAN</div>
+			<div class=imgs><a href=anime/hxh.html><img  class=bio src=bilder/88.jpg alt="HTML tutorial"><br><p>HUNTER X HUNTER</div>
+			<div class=imgs><a href=anime/black-clover.html><img  class=bio src=bilder/black.jpg alt="HTML tutorial"><br><p>BLACK CLOVER</div>
+			
+			<div class=imgs><a href=anime/zero.html><img  class=bio src=bilder/002.jpg alt="HTML tutorial"><br><p>DARLING IN THE FRANKXX</div>
+			<div class=imgs><a href=anime/nikki.html><img  class=bio src=bilder/nikki1.jpg alt="HTML tutorial"><br><p>MIRAI NIKKI</div>
+			<div class=imgs><a href=anime/demon.html><img  class=bio src=bilder/demon-slayer.webp alt="HTML tutorial"><br><p>DEMON SLAYER </div>
+			
+			<div class=imgs><a href=anime/tokyo.html><img  class=bio src=bilder/tokyo2.jpg alt="HTML tutorial"><br><p>TOKYO REVENGER</div>
+			<div class=imgs><a href=anime/note.html><img  class=bio src=bilder/death-note.jpg alt="HTML tutorial"><br><p>DEATH NOTE</div>
+			<div class=imgs><a href=anime/nana.html><img  class=bio src=bilder/nana.jpg alt="HTML tutorial"><br><p>NANATSU NO TIZIN</div>
+			
+			<div class=imgs><a href=anime/spy.html><img  class=bio src=bilder/spyxfamily.jpg alt="HTML tutorial"><br><p>SPY X FAMILY</div>
+			<div class=imgs><a href=anime/doror.html><img  class=bio src=bilder/dororo.jpg alt="HTML tutorial"><br><p>DORORO</div>
+			<div class=imgs><a href=anime/promes.html><img  class=bio src=bilder/the.jpg alt="HTML tutorial"><br><p>THE PROMES NEVER LAND </div>
+			
+			<div class=imgs><a href=anime/naruto.html><img  class=bio src=bilder/naruto1.jpg alt="HTML tutorial"><br><p>NARUTO</div>
+			<div class=imgs><a href=anime/one.html><img  class=bio src=bilder/one-piece.jpg alt="HTML tutorial"><br><p>ONE PIECE</div>
+			<div class=imgs><a href=anime/conan.html><img  class=bio src=bilder/conan.jpg alt="HTML tutorial"><br><p>DETECTIVE CONAN</div>
+			
+			<div class=imgs><a href=anime/angel.html><img  class=bio src=bilder/angel-of-death.jpg alt="HTML tutorial"><br><p>ANGEL OF DEATH</div>
+			<div class=imgs><a href=anime/high.html><img  class=bio src=bilder/high1.jpg alt="HTML tutorial"><br><p>HIGH INVASION</div>
+			<div class=imgs><a href=anime/juju.html><img  class=bio src=bilder/juju1.jpg alt="HTML tutorial"><br><p>JUJUTSU KAISEN</div>
+			
+		</div>
+		
+		<div id=social>
+				<a href="https://www.facebook.com/aya.nasra.355/" class="fa fa-facebook"></a>
+				<a href="https://www.instagram.com/nasra.aya/" class="fa fa-instagram"></a>
+				<a href="https://twitter.com/home" class="fa fa-twitter"></a>
+				<a href="https://www.pinterest.se/ayanas0304/" class="fa fa-pinterest"></a>
+			
+			<div id=baka>
+				Ayanas0304@gmail.com
+					&copy;AYA
+			</div>
+		</div>
+		
+		
+	</body>
+</html> 

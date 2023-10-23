@@ -1,0 +1,343 @@
+body 
+		{
+			//font-family: Verdana, sans-serif;	
+			background-color: #303030;
+		}
+		 a:hover
+        {
+          background-color: black;
+        }
+		div.g
+		{
+			//background-color: blue;
+			padding-bottom:50px;
+			height: 100px;
+			width: 1500px;
+			
+		}
+		img#ettan
+		{
+			height:100px;
+			width: 350px;
+			top: 10px;
+			left: 10px;
+			
+		}
+		input#text
+		{
+			//background-color: blue;
+			width: 300px;
+			border-radius: 30px;
+			margin:auto;
+		}
+		a, a:visited
+		{
+			color: white;
+			text-decoration: none;
+		}
+		div#links
+		{
+			position:absolute;
+			padding:10px;
+			top:40px;
+			right:20px;
+		}
+		a.mai
+		{
+			//background-color:red;
+			padding:10px;
+		
+			
+		}
+		a#lan
+		{
+			margin:auto;
+			
+			
+		}
+		a#su
+		{
+			margin:auto;
+			
+		}
+		a#sta
+		{
+			margin:auto;
+		
+		
+		}
+		.slideshow-container img
+		{
+			border: 8px solid black;
+			border-radius: 30px;
+			width: 200px;
+			height: 80px;
+			margin-top: -30px; 
+		}
+		.mySlides 
+		{
+			display: none;
+			width: 100px;
+			height: 400px;	
+		}
+		.slideshow-container 
+		{
+			width: 1495px;
+			height: 345px;
+		}
+		.dot 
+		{
+			height: 15px;
+			width: 15px;
+			margin: 3px;
+			background-color: black;
+			border-radius: 50%;
+			display: inline-block;
+			margin-top: -22px;  
+		}
+		.active 
+		{
+		  background-color: #717171;
+		}
+		.fade
+		{
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+
+		@keyframes fade 
+		{
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+		 @media only screen and (max-width: 300px) 
+		{
+		  .text {font-size: 191px}
+		}       
+		div#bio
+		{
+			//margin: auto;
+			width: 1496px;
+			margin-top: 70px;
+		}
+		
+		img.bio
+		{
+			//background-color: yellow;
+			width: 400px;
+			height: 400px;
+			border: 8px solid black;
+			border-radius: 50%;
+			margin: auto;
+			margin-left: 20px;
+		}
+		div.imgs
+        {
+        	box-sizing: border-box;
+        	//background-color: pink;
+        	width: 498px;
+        	float: left;
+			margin: auto;
+        	text-align: center;
+        	padding: 5px;
+        	padding-bottom: 5px;
+        }
+		div#social
+		{
+			//background-color:red;
+			background-color: #0d0d11;
+			width: 1509px;
+			margin: auto;
+			height: 160px;
+			margin-top:3210px;
+		}
+		div#baka
+		{
+			color:white;
+			text-align:center;
+		}
+		.fa
+		{
+			background-color: black;
+			padding: 20px;
+			font-size: 20px;
+			width: 15px;
+			text-align: center;
+			text-decoration: none;
+			margin: 30px 10px;			
+		}
+		.fa-instagram 
+		{
+			background: #125688;
+			color: white;
+		}
+		.fa-pinterest 
+		{
+		  background: #cb2027;
+		  color: white; 
+		}
+		.fa-facebook 
+		{
+		  background: #3B5998;
+		  color: white;
+		  margin-left: 620px;
+		}
+		.fa-twitter
+		{
+		  background: #55ACEE;
+		  color: white;
+		}
+
+		div#noslideshow
+		{
+				display: none;
+				margin-left:25px;
+		}
+		
+		*
+		{
+				font-size: 17px;
+		}
+	@media screen and (max-width: 900px)
+	{
+		div#bio
+		{
+			margin: auto;
+			width: 100vw;
+			margin-top: 70px;
+		}
+		div.imgs
+		{
+				//background-color: lightblue;
+				float: none;
+				//text-align: center;
+				margin: auto;
+				//left:50%;
+		}
+		img.bio
+		{
+			//position:absolute;
+			//background-color: yellow;
+			width: 400px;
+			height: 400px;
+			border: 8px solid black;
+			border-radius: 50%;
+			//left:50%;
+			
+		}
+		div#slideshow
+		{	
+			display: none;
+			background-color:white;
+		}
+		div#noslideshow
+		{
+			display: block;
+			margin:auto;
+			width: 500px;
+			//background-color: orange;
+		}
+		div#doti
+		{
+			display: none;
+
+		}
+		
+		a.mai
+		{
+			
+			float:left;
+			
+			
+		}
+		img#ettan
+		{
+			//position:absolute;
+			margin:auto;
+			width:350px;
+			//margin-left: 60px;
+			//margin-top:-20px;
+			background-color:pink;
+			
+		}
+		div#social
+		{
+			width: 350px;
+			//background-color: #0d0d11;
+			//background-color: yellow;
+			height: 160px;
+			margin-top:0px;
+		}
+		div#baka
+		{
+			color:white;
+			text-align:center;
+		}
+				
+		.fa-facebook 
+		{
+		  background: #3B5998;
+		  color: white;
+		  margin-left: 20px;	
+		}
+		
+		div.g
+		{
+		
+			//background-color: blue;
+			padding-bottom:50px;
+			height: 100px;
+			//margin-left:600px;
+			width: 350px;
+			margin:auto;
+			
+		}
+		div#links
+		{
+			//background-color: pink;
+			width: 345px;
+			top:0px;
+			right:0px;
+			text-align:center;
+			position:relative;
+			margin:auto;
+		}
+		input#text
+		{
+			//position:absolute;
+			//background-color: purple;
+			width: 300px;
+			bottom:60px;
+			border-radius: 30px;
+			margin:auto;			
+		}
+		a#lan
+		{
+			//position:absolute;
+			//background-color:red;
+			width:115px;
+			//top:100px;
+			//margin:auto;
+			//padding-left:250px;
+			
+		}
+		a#su
+		{
+			width:115px;
+		}
+		a#sta
+		{
+			width:115px;	
+		}
+		img#ita
+		{
+			width: 500px;
+			height:400px;
+			margin:auto;
+		}
+
+	}
+			p
+			{
+				font-size:30px;
+			}
